@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Instituto Cultural Niten — O Templo dos Samurais. Maior centro de ensino das artes da espada samurai fora do Japão. Kenjutsu, Iaijutsu e Jojutsu.">
+<meta name="theme-color" content="#0D0D0D">
+<title>Instituto Cultural Niten — O Templo dos Samurais</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+<!-- Favicon: kamon -->
+<link rel="icon" type="image/png" href="logo-niten.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">
+      <img src="logo-niten.png" alt="Instituto Cultural Niten">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#modalidades">Modalidades</a></li>
+      <li><a href="#metodo">Método KIR</a></li>
+      <li><a href="#sensei">Sensei</a></li>
+      <li><a href="#contato" class="nav-cta">Iniciar Treinamento</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menu Mobile -->
+<div class="nav-mobile" id="mobileMenu" role="dialog" aria-label="Menu de navegação">
+  <a href="#sobre">Sobre</a>
+  <a href="#modalidades">Modalidades</a>
+  <a href="#metodo">Método KIR</a>
+  <a href="#sensei">Sensei</a>
+  <a href="#valores">Bushido</a>
+  <a href="#onde-treinar">Onde Treinar</a>
+  <a href="#contato" class="nav-cta">Iniciar Treinamento</a>
+</div>
+
+<main>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-track" id="heroTrack">
+
+    <!-- SLIDE 1: Conteúdo principal -->
+    <div class="hero-slide hero-slide-1">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-bg-kanji" aria-hidden="true">剣</div>
+
+      <div class="hero-content">
+        <img
+          src="logo-niten.png"
+          alt="Instituto Cultural Niten"
+          class="hero-logo"
+        >
+        <p class="hero-tagline-label">Desde 1993 · São Paulo · Brasil</p>
+        <h1 class="hero-title">
+          O Templo dos
+          <em>Samurais</em>
+        </h1>
+        <div class="hero-gold-line" aria-hidden="true"></div>
+        <p class="hero-quote">
+          <strong>"Buscar a invencibilidade e trazer a espada que dá a vida.</strong><br>
+          Em abundância."<br>
+          <small style="font-size:.75em; letter-spacing:2px; margin-top:8px; display:block;">— Sensei Jorge Kishikawa</small>
+        </p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Iniciar Treinamento</a>
+          <a href="#metodo" class="btn btn-ghost">Conheça o Método KIR</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Descubra</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Vídeo — desktop: texto + vídeo lado a lado | mobile: vídeo tela toda -->
+    <div class="hero-slide hero-slide-2">
+      <div class="hero-slide-2-bg" aria-hidden="true"></div>
+
+      <!-- Texto (esquerda no desktop, overlay na base no mobile) -->
+      <div class="hero-vid-text">
+        <span class="section-label">O Niten em Movimento</span>
+        <h2 class="hero-video-title">A espada<br><em>em ação</em></h2>
+        <div class="gold-line"></div>
+        <p class="hero-video-desc">Veja como é treinar no Instituto Niten. Técnica real, filosofia viva e saúde integradas em cada aula.</p>
+        <a href="#contato" class="btn btn-primary">Agendar aula experimental</a>
+      </div>
+
+      <!-- Vídeo (direita no desktop, tela toda no mobile) -->
+      <div class="hero-vid-right">
+        <iframe
+          src="https://www.youtube.com/embed/7jfpYF0Du6Q?rel=0&modestbranding=1&controls=1"
+          title="IAIJUTSU no Instituto Niten"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Seta -->
+  <button class="hero-slider-arrow" id="heroSliderArrow" aria-label="Próximo slide">›</button>
+
+  <!-- Dots -->
+  <div class="hero-slider-nav" role="tablist">
+    <button class="hero-dot active" data-slide="0" aria-label="Slide 1" role="tab"></button>
+    <button class="hero-dot" data-slide="1" aria-label="Slide 2: Vídeo" role="tab"></button>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════════
+     SOBRE
+════════════════════════════════════════ -->
+<section id="sobre" class="section">
+  <div class="container">
+    <div class="sobre-grid">
+
+      <div class="sobre-kamon reveal-left">
+        <div class="sobre-foto-frame">
+          <div class="slc tl"></div><div class="slc tr"></div>
+          <div class="slc bl"></div><div class="slc br"></div>
+          <!-- Trocar pela foto do Instituto / dojo -->
+          <img
+            src="https://niten.org.br/uploads/rei/28841/fs-82-senpai-ricardo.jpg?w=480&h=560&fit=crop&q=80"
+            alt="Instituto Cultural Niten — Dojo"
+            class="sobre-foto-img"
+            loading="lazy"
+          >
+          <div class="sobre-foto-caption">
+            <div class="sobre-frame-divider"></div>
+            <div class="sobre-frame-year">1993</div>
+            <div class="sobre-frame-label">Fundação do Instituto</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-text reveal-right">
+        <span class="section-label">Sobre o Instituto</span>
+        <h2 class="section-title">Desde 1993,<br>o <em>legado</em> do samurai</h2>
+        <div class="gold-line"></div>
+
+        <div class="sobre-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="1993" data-prefix="">1993</span>
+            <span class="stat-label">Fundação</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="68" data-suffix="+">68+</span>
+            <span class="stat-label">Dojos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="30000" data-suffix="+">30.000+</span>
+            <span class="stat-label">Praticantes</span>
+          </div>
+        </div>
+
+        <p>Fundado por <strong>Sensei Jorge Kishikawa</strong> no bairro do Itaim, em São Paulo, o Instituto Cultural Niten nasceu para difundir as artes da espada samurai, a filosofia do Bushido e a cultura japonesa.</p>
+        <p>Hoje é reconhecido como o <strong>maior centro de ensino das artes tradicionais dos Samurais fora do Japão</strong>, com dojos ativos no Brasil, Argentina, Chile, Colômbia, Uruguai, EUA, Canadá, Portugal e Inglaterra.</p>
+        <p>Mais do que um dojo — <strong>o Niten é uma filosofia de vida</strong>. A espada é o caminho. O treino transforma o guerreiro.</p>
+
+        <a href="#modalidades" class="btn btn-ghost" style="margin-top:32px;">Conheça as modalidades</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     MODALIDADES
+════════════════════════════════════════ -->
+<section id="modalidades" class="section">
+  <div class="container">
+    <div class="modalidades-header reveal">
+      <span class="section-label">As Artes da Espada</span>
+      <h2 class="section-title">Três artes,<br>uma <em>tradição</em></h2>
+      <div class="gold-line center"></div>
+      <p class="section-desc">Cada modalidade é uma porta de entrada dentro da tradição samurai, todos guiados pelo mesmo espírito do Bushido e pelo Método KIR.</p>
+    </div>
+
+    <div class="modalidades-grid">
+
+      <!-- Kenjutsu -->
+      <div class="modalidade-card reveal reveal-delay-1">
+        <div class="mod-img-wrap">
+          <img src="https://miro.medium.com/1*gIcWPcThGfDuGt8iJ0X19w.jpeg" alt="Kenjutsu — arte do combate com espada" loading="lazy">
+        </div>
+        <div class="mod-body">
+          <span class="mod-kanji" aria-hidden="true">剣</span>
+          <span class="mod-number">01 · Modalidade</span>
+          <h3 class="mod-title">Kenjutsu</h3>
+          <span class="mod-sub">Arte do Combate com a Espada</span>
+          <div class="mod-line"></div>
+          <p class="mod-desc">Kenjutsu é a arte milenar do combate com espada, raiz histórica de onde nasceu o Kendo moderno. No Instituto Niten, praticado com shinai (espada de bambu) e bogu (armadura), integrando técnica de combate autêntica com o rigor do kobudo clássico.</p>
+        </div>
+      </div>
+
+      <!-- Iaijutsu -->
+      <div class="modalidade-card reveal reveal-delay-2">
+        <div class="mod-img-wrap">
+          <img src="https://niten.org.br/img/2008/01jan/sensei-iai2_g.jpg" alt="Iaijutsu — arte do saque da espada" loading="lazy">
+        </div>
+        <div class="mod-body">
+          <span class="mod-kanji" aria-hidden="true">居</span>
+          <span class="mod-number">02 · Modalidade</span>
+          <h3 class="mod-title">Iaijutsu</h3>
+          <span class="mod-sub">Arte do Saque da Espada</span>
+          <div class="mod-line"></div>
+          <p class="mod-desc">O samurai que domina o Iaijutsu está sempre pronto. O saque, o corte e o recolhimento da katana são executados em um único e perfeito movimento. Disciplina mental, precisão absoluta e atenção plena em cada instante do treino.</p>
+        </div>
+      </div>
+
+      <!-- Jojutsu -->
+      <div class="modalidade-card reveal reveal-delay-3">
+        <div class="mod-img-wrap">
+          <img src="https://i.ytimg.com/vi/qi1anXbyab8/maxresdefault.jpg" alt="Jojutsu — arte do bastão japonês" loading="lazy">
+        </div>
+        <div class="mod-body">
+          <span class="mod-kanji" aria-hidden="true">杖</span>
+          <span class="mod-number">03 · Modalidade</span>
+          <h3 class="mod-title">Jojutsu</h3>
+          <span class="mod-sub">Arte do Bastão Japonês</span>
+          <div class="mod-line"></div>
+          <p class="mod-desc">A arte do jo — bastão de madeira de aproximadamente 128cm — contra a espada. Incorporado às tradições samurais desde o século XVII, o Jojutsu ensina que um guerreiro completo domina múltiplas armas com a mesma maestria e serenidade.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     SENSEI
+════════════════════════════════════════ -->
+<section id="sensei" class="section">
+  <div class="container">
+    <div class="sensei-grid">
+
+      <div class="sensei-visual reveal-left">
+        <div class="sensei-frame">
+          <!-- Trocar pela foto do Sensei Kishikawa -->
+          <img
+            src="https://niten.org.br/uploads/rei/28841/bushidog.jpg?w=520&h=660&fit=crop&q=80"
+            alt="Sensei Jorge Kishikawa"
+            class="sensei-foto"
+            loading="lazy"
+          >
+          <div class="sensei-corner tl"></div>
+          <div class="sensei-corner tr"></div>
+          <div class="sensei-corner bl"></div>
+          <div class="sensei-corner br"></div>
+          <span class="sensei-frame-kanji" aria-hidden="true">師</span>
+          <div class="sensei-frame-label">
+            <span class="sensei-frame-name">Sensei Jorge Kishikawa</span>
+            <span class="sensei-frame-title">Menkyo Kaiden · Niten Ichi Ryu · 7º Dan Kyoshi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <span class="section-label">O Fundador</span>
+        <h2 class="section-title">Sensei<br><em>Jorge Kishikawa</em></h2>
+        <div class="gold-line"></div>
+
+        <blockquote class="sensei-quote">
+          "O objetivo do Método KIR é o <strong>aprimoramento máximo das competências do indivíduo</strong>. Não apenas como praticante da espada — mas como ser humano."
+        </blockquote>
+
+        <div class="sensei-credentials">
+          <div class="credential">
+            <span class="credential-icon">段</span>
+            <div class="credential-text">
+              <strong>7º Dan Kyoshi em Kendo — Japão</strong>
+              O grau mais elevado reconhecido pela federação japonesa
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">免</span>
+            <div class="credential-text">
+              <strong>Menkyo Kaiden — Niten Ichi Ryu</strong>
+              A certificação completa no estilo de Miyamoto Musashi
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">冠</span>
+            <div class="credential-text">
+              <strong>Pentacampeão Consecutivo Brasileiro de Kendo (2 vezes)</strong>
+              Um dos maiores recordes da história do Kendo no Brasil
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">著</span>
+            <div class="credential-text">
+              <strong>Autor: Shin Hagakure</strong>
+              "Pensamentos de um Samurai Moderno" — referência do Bushido aplicado à vida contemporânea
+            </div>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn btn-ghost">Treinar com o Sensei</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     MÉTODO KIR
+════════════════════════════════════════ -->
+<section id="metodo" class="section">
+  <div class="container">
+    <div class="metodo-header reveal">
+      <span class="section-label">A Metodologia</span>
+      <h2 class="section-title">Método <em>KIR</em></h2>
+      <div class="gold-line center"></div>
+      <p class="section-desc">Ken Intensive Recuperation — Recuperação Intensiva pela Espada. Criado por Sensei Kishikawa, integra técnica marcial, filosofia e desenvolvimento pessoal em um único sistema.</p>
+    </div>
+
+    <div class="metodo-pillars">
+      <div class="pillar reveal reveal-delay-1">
+        <span class="pillar-num">01 · Portal</span>
+        <span class="pillar-icon" aria-hidden="true">刀</span>
+        <h3 class="pillar-title">Técnica</h3>
+        <p class="pillar-desc">Katas, combate real com a espada e condicionamento físico específico. A prática forja o corpo e disciplina a mente por meio da repetição consciente e progressiva da arte marcial.</p>
+      </div>
+      <div class="pillar reveal reveal-delay-2">
+        <span class="pillar-num">02 · Portal</span>
+        <span class="pillar-icon" aria-hidden="true">心</span>
+        <h3 class="pillar-title">Filosofia</h3>
+        <p class="pillar-desc">Os Momentos de Ouro ao final de cada treino transmitem os ensinamentos do Bushido: disciplina, autocontrole, concentração e a aplicação da filosofia samurai na vida cotidiana.</p>
+      </div>
+      <div class="pillar reveal reveal-delay-3">
+        <span class="pillar-num">03 · Portal</span>
+        <span class="pillar-icon" aria-hidden="true">健</span>
+        <h3 class="pillar-title">Saúde</h3>
+        <p class="pillar-desc">Qualidade de vida, equilíbrio e longevidade desenvolvidos de forma integrada. O treinamento fortalece o corpo, estabiliza a mente e constrói resiliência para os desafios da vida moderna.</p>
+      </div>
+    </div>
+
+    <div class="metodo-destaque reveal">
+      <div class="metodo-destaque-label" aria-hidden="true">二天</div>
+      <div class="metodo-destaque-text">
+        <h3>Niten Ichi Ryu — O Estilo de Miyamoto Musashi</h3>
+        <p>O Instituto Niten preserva e ensina o Niten Ichi Ryu — "Dois Céus, Uma Escola" — o sistema de combate com duas espadas criado pelo maior samurai da história japonesa. Sensei Kishikawa é Menkyo Kaiden neste estilo, a mais alta certificação existente.</p>
+        <a href="#contato" class="btn btn-ghost">Quero conhecer o Método</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     MOMENTOS DE OURO
+════════════════════════════════════════ -->
+<section id="momentos">
+  <div class="momentos-content reveal">
+    <span class="momentos-icon" aria-hidden="true">黄</span>
+    <h2 class="momentos-title">Momentos de <em style="color:var(--dourado); font-style:normal;">Ouro</em></h2>
+    <div class="gold-line center"></div>
+    <p class="momentos-desc">
+      Ao final de cada treino, o dojo se transforma em espaço de sabedoria. Sensei e Senpais reunem os alunos para compartilhar ensinamentos sobre disciplina, autoconhecimento, compaixão e a aplicação do Bushido na vida cotidiana.
+      <br><br>
+      <em>"A espada é o espelho da alma. Cada movimento revela quem você realmente é."</em>
+    </p>
+    <a href="#contato" class="btn btn-primary">Participar do Próximo Treino</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     VÍDEO
+════════════════════════════════════════ -->
+<section id="video" class="section">
+  <div class="container">
+    <div class="video-header reveal">
+      <span class="section-label">O Niten em Movimento</span>
+      <h2 class="section-title">Veja o <em>caminho</em> do samurai</h2>
+      <div class="gold-line center"></div>
+      <p class="section-desc">Conheça o Instituto Niten, sua filosofia e seus praticantes antes de dar o primeiro passo no dojo.</p>
+    </div>
+    <div class="video-wrapper reveal" style="margin-top:48px;">
+      <iframe
+        src="https://www.youtube.com/embed/YcUBY0uxVBI?rel=0&modestbranding=1&color=white"
+        title="Dia do Samurai — 30 anos do Instituto Niten"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    <p class="video-note reveal">
+      Mais vídeos no canal oficial:
+      <a href="https://www.youtube.com/@nitenvideos" target="_blank" rel="noopener">youtube.com/@nitenvideos</a>
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     VALORES BUSHIDO
+════════════════════════════════════════ -->
+<section id="valores" class="section">
+  <div class="container">
+    <div class="valores-header reveal">
+      <span class="section-label">A Filosofia</span>
+      <h2 class="section-title">Os Valores do <em>Bushido</em></h2>
+      <div class="gold-line center"></div>
+      <p class="section-desc" style="margin: 0 auto;">O código de ética dos samurais — praticado dentro e fora do dojo, em cada decisão da vida.</p>
+    </div>
+
+    <div class="valores-grid">
+      <div class="valor-card reveal reveal-delay-1">
+        <span class="valor-jp" aria-label="Honestidade">誠</span>
+        <span class="valor-pt">Honestidade</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Ser verdadeiro em palavras e ações. A fundação de toda relação de confiança dentro e fora do dojo.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-2">
+        <span class="valor-jp" aria-label="Compaixão">仁</span>
+        <span class="valor-pt">Compaixão</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">A espada que protege, não que agride. Força a serviço da vida, nunca da destruição.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-3">
+        <span class="valor-jp" aria-label="Coragem">勇</span>
+        <span class="valor-pt">Coragem</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Enfrentar o desafio sem recuar. A verdadeira coragem começa por encarar a si mesmo.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-1">
+        <span class="valor-jp" aria-label="Honra" style="font-size:32px; letter-spacing:-2px; line-height:1.2;">名誉</span>
+        <span class="valor-pt">Honra</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Viver e agir de forma a manter a própria dignidade e a de todos que te rodeiam.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-2">
+        <span class="valor-jp" aria-label="Justiça">義</span>
+        <span class="valor-pt">Justiça</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Agir com retidão e princípios. Fazer o que é certo, independente das circunstâncias.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-3">
+        <span class="valor-jp" aria-label="Lealdade">忠</span>
+        <span class="valor-pt">Lealdade</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Compromisso inabalável com mestres, companheiros e com o próprio caminho escolhido.</p>
+      </div>
+      <div class="valor-card reveal reveal-delay-1 valor-last">
+        <span class="valor-jp" aria-label="Respeito">礼</span>
+        <span class="valor-pt">Respeito</span>
+        <div class="valor-line"></div>
+        <p class="valor-desc">Honrar a tradição, os mestres, os companheiros e os adversários com igual reverência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     PRESENÇA
+════════════════════════════════════════ -->
+<section id="onde-treinar" class="section">
+  <div class="container">
+    <div class="presenca-grid">
+
+      <div class="reveal-left">
+        <span class="section-label">Onde Treinar</span>
+        <h2 class="section-title">Niten no<br><em>mundo</em></h2>
+        <div class="gold-line"></div>
+        <p class="section-desc" style="margin-bottom:32px;">O caminho do samurai não conhece fronteiras. O Instituto Niten tem dojos ativos em 9 países, levando a tradição do Bushido a praticantes de todo o mundo.</p>
+
+        <div class="presenca-paises">
+          <div class="pais">Brasil</div>
+          <div class="pais">Argentina</div>
+          <div class="pais">Chile</div>
+          <div class="pais">Colômbia</div>
+          <div class="pais">Uruguai</div>
+          <div class="pais">Estados Unidos</div>
+          <div class="pais">Canadá</div>
+          <div class="pais">Portugal</div>
+          <div class="pais">Inglaterra</div>
+        </div>
+
+        <a href="#contato" class="btn btn-ghost" style="margin-top:36px;">Agendar aula experimental</a>
+      </div>
+
+      <div class="reveal-right">
+        <div class="presenca-numbers">
+          <div class="presenca-num-card">
+            <span class="presenca-big">68<span style="color:var(--cinza-claro); font-size:.5em;">+</span></span>
+            <span class="presenca-sub">Dojos ativos</span>
+          </div>
+          <div class="presenca-num-card">
+            <span class="presenca-big">9</span>
+            <span class="presenca-sub">Países</span>
+          </div>
+          <div class="presenca-num-card">
+            <span class="presenca-big">30<span style="color:var(--cinza-claro); font-size:.5em;">+</span></span>
+            <span class="presenca-sub">Anos de tradição</span>
+          </div>
+          <div class="presenca-num-card">
+            <span class="presenca-big">10K<span style="color:var(--cinza-claro); font-size:.5em;">+</span></span>
+            <span class="presenca-sub">Vidas transformadas</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+     CONTATO
+════════════════════════════════════════ -->
+<section id="contato" class="section">
+  <div class="container">
+    <div class="contato-grid">
+
+      <div class="reveal-left">
+        <span class="section-label">Comece Agora</span>
+        <h2 class="section-title">Inicie sua<br><em>jornada</em></h2>
+        <div class="gold-line"></div>
+        <p class="section-desc" style="margin-bottom:40px;">A aula experimental é gratuita. Preencha ao lado e envie uma mensagem direta pelo WhatsApp — você será redirecionado com a mensagem já preparada.</p>
+
+        <div class="contato-detail">
+          <div class="detail-item">
+            <span class="detail-icon" aria-hidden="true">📍</span>
+            <div class="detail-text">
+              <strong>Sede: São Paulo, Brasil</strong>
+              Dojos em todo o Brasil e no exterior
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon" aria-hidden="true">📞</span>
+            <div class="detail-text">
+              <strong>WhatsApp</strong>
+              <a href="tel:+5511942948956">+55 (11) 94294-8956</a>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon" aria-hidden="true">🌐</span>
+            <div class="detail-text">
+              <strong>Site oficial</strong>
+              <a href="https://niten.org.br" target="_blank" rel="noopener">niten.org.br</a>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon" aria-hidden="true">📷</span>
+            <div class="detail-text">
+              <strong>Instagram</strong>
+              <a href="https://instagram.com/institutoniten" target="_blank" rel="noopener">@institutoniten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <form id="contatoForm" novalidate>
+          <p style="font-size:13px; color:var(--cinza-claro); margin-bottom:28px; line-height:1.7;">Preencha os campos abaixo. Ao clicar em <strong style="color:var(--branco);">Enviar pelo WhatsApp</strong>, você será redirecionado com a mensagem já escrita e pronta para enviar.</p>
+          <div class="form-group">
+            <label class="form-label" for="nome">Seu nome</label>
+            <input class="form-input" type="text" id="nome" name="nome" placeholder="Como quer ser chamado?" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cidade">Sua cidade</label>
+            <input class="form-input" type="text" id="cidade" name="cidade" placeholder="São Paulo, Rio de Janeiro..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalidade">Interesse</label>
+            <select class="form-input" id="modalidade" name="modalidade">
+              <option value="Kenjutsu">Kenjutsu</option>
+              <option value="Iaijutsu">Iaijutsu</option>
+              <option value="Jojutsu">Jojutsu</option>
+              <option value="KIR Empresarial">KIR Empresarial</option>
+              <option value="todas as modalidades, ainda não sei qual escolher">Ainda não sei</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-whatsapp" style="width:100%; justify-content:center; margin-top:8px;">
+            <span style="font-size:18px;">📲</span>
+            Enviar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <img
+          src="logo-niten.png"
+          alt="Instituto Cultural Niten"
+          class="footer-logo"
+        >
+        <p class="footer-brand-desc">O maior centro de ensino das artes tradicionais dos Samurais fora do Japão. Desde 1993, transmitindo o legado do Bushido.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/institutoniten" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="https://www.youtube.com/@nitenvideos" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">YT</a>
+          <a href="https://www.facebook.com/institutoniten" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/5511942948956" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <div>
+        <span class="footer-col-title">Modalidades</span>
+        <ul class="footer-links">
+          <li><a href="#modalidades">Kenjutsu</a></li>
+          <li><a href="#modalidades">Iaijutsu</a></li>
+          <li><a href="#modalidades">Jojutsu</a></li>
+          <li><a href="#metodo">KIR Empresarial</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer-col-title">Instituto</span>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre o Niten</a></li>
+          <li><a href="#sensei">Sensei Kishikawa</a></li>
+          <li><a href="#metodo">Método KIR</a></li>
+          <li><a href="#valores">Filosofia Bushido</a></li>
+          <li><a href="#onde-treinar">Onde Treinar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer-col-title">Contato</span>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5511942948956" target="_blank">WhatsApp</a></li>
+          <li><a href="https://niten.org.br" target="_blank">niten.org.br</a></li>
+          <li><a href="https://instagram.com/institutoniten" target="_blank">@institutoniten</a></li>
+          <li><a href="#contato">Aula Experimental</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 <em>Instituto Cultural Niten</em>. Todos os direitos reservados.
+      </p>
+      <p class="footer-tagline">O Templo dos Samurais · 二天</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
